@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		C3121A0D2A3877FB00A73415 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3121A0C2A3877FB00A73415 /* AppDelegate.swift */; };
 		C3121A0F2A3877FB00A73415 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3121A0E2A3877FB00A73415 /* SceneDelegate.swift */; };
-		C3121A112A3877FB00A73415 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3121A102A3877FB00A73415 /* ViewController.swift */; };
+		C3121A112A3877FB00A73415 /* StoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3121A102A3877FB00A73415 /* StoryController.swift */; };
 		C3121A142A3877FB00A73415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3121A122A3877FB00A73415 /* Main.storyboard */; };
 		C3121A162A3877FC00A73415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3121A152A3877FC00A73415 /* Assets.xcassets */; };
 		C3121A192A3877FC00A73415 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3121A172A3877FC00A73415 /* LaunchScreen.storyboard */; };
 		C3121A242A3877FD00A73415 /* StoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3121A232A3877FD00A73415 /* StoryTests.swift */; };
 		C3121A2E2A3877FD00A73415 /* StoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3121A2D2A3877FD00A73415 /* StoryUITests.swift */; };
 		C3121A302A3877FD00A73415 /* StoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3121A2F2A3877FD00A73415 /* StoryUITestsLaunchTests.swift */; };
+		C3121A402A38796100A73415 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3121A3F2A38796100A73415 /* Story.swift */; };
+		C3121A422A387A2E00A73415 /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3121A412A387A2E00A73415 /* StoryBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		C3121A092A3877FB00A73415 /* Story.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Story.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3121A0C2A3877FB00A73415 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3121A0E2A3877FB00A73415 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C3121A102A3877FB00A73415 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3121A102A3877FB00A73415 /* StoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryController.swift; sourceTree = "<group>"; };
 		C3121A132A3877FB00A73415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3121A152A3877FC00A73415 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3121A182A3877FC00A73415 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		C3121A292A3877FD00A73415 /* StoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3121A2D2A3877FD00A73415 /* StoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryUITests.swift; sourceTree = "<group>"; };
 		C3121A2F2A3877FD00A73415 /* StoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3121A3F2A38796100A73415 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		C3121A412A387A2E00A73415 /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,11 @@
 		C3121A0B2A3877FB00A73415 /* Story */ = {
 			isa = PBXGroup;
 			children = (
+				C3121A3E2A38795100A73415 /* Model */,
 				C3121A0C2A3877FB00A73415 /* AppDelegate.swift */,
 				C3121A0E2A3877FB00A73415 /* SceneDelegate.swift */,
-				C3121A102A3877FB00A73415 /* ViewController.swift */,
-				C3121A122A3877FB00A73415 /* Main.storyboard */,
+				C3121A3D2A38794700A73415 /* Controller */,
+				C3121A3C2A38794200A73415 /* View */,
 				C3121A152A3877FC00A73415 /* Assets.xcassets */,
 				C3121A172A3877FC00A73415 /* LaunchScreen.storyboard */,
 				C3121A1A2A3877FC00A73415 /* Info.plist */,
@@ -125,6 +130,31 @@
 				C3121A2F2A3877FD00A73415 /* StoryUITestsLaunchTests.swift */,
 			);
 			path = StoryUITests;
+			sourceTree = "<group>";
+		};
+		C3121A3C2A38794200A73415 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3121A122A3877FB00A73415 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3121A3D2A38794700A73415 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C3121A102A3877FB00A73415 /* StoryController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C3121A3E2A38795100A73415 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3121A3F2A38796100A73415 /* Story.swift */,
+				C3121A412A387A2E00A73415 /* StoryBrain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3121A112A3877FB00A73415 /* ViewController.swift in Sources */,
+				C3121A422A387A2E00A73415 /* StoryBrain.swift in Sources */,
+				C3121A112A3877FB00A73415 /* StoryController.swift in Sources */,
 				C3121A0D2A3877FB00A73415 /* AppDelegate.swift in Sources */,
 				C3121A0F2A3877FB00A73415 /* SceneDelegate.swift in Sources */,
+				C3121A402A38796100A73415 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
